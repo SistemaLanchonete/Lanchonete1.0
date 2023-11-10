@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cadrastar.cs">
+    <Compile Include="Cadastar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadrastar.Designer.cs">
-      <DependentUpon>Cadrastar.cs</DependentUpon>
+    <Compile Include="Cadastar.Designer.cs">
+      <DependentUpon>Cadastar.cs</DependentUpon>
     </Compile>
     <Compile Include="Entidades\Cliente.cs" />
     <Compile Include="Entidades\Funcionario.cs" />
@@ -70,8 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cadrastar.resx">
-      <DependentUpon>Cadrastar.cs</DependentUpon>
+    <Compile Include="ValidarCPF.cs" />
+    <EmbeddedResource Include="Cadastar.resx">
+      <DependentUpon>Cadastar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
