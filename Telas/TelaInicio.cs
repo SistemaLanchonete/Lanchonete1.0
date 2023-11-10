@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace _01___Sistema_de_Lanchonete
 {
@@ -15,7 +16,9 @@ namespace _01___Sistema_de_Lanchonete
         public Form1()
         {
             InitializeComponent();
+
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -37,6 +40,37 @@ namespace _01___Sistema_de_Lanchonete
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+       private void Form1_Load(object sender, EventArgs e)
+        {
+                    }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Cadastar a = new Cadastar();
+            a.ShowDialog();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Login a = new Login();
+            a.ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

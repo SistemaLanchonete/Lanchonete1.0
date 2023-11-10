@@ -34,3 +34,17 @@ C:\Users\tayna_97l6kwx\OneDrive\Documentos\3°Bimestre\Sistema de Lanchonete\Lan
 C:\Users\tayna_97l6kwx\OneDrive\Documentos\3°Bimestre\Sistema de Lanchonete\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.exe
 C:\Users\tayna_97l6kwx\OneDrive\Documentos\3°Bimestre\Sistema de Lanchonete\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.pdb
 C:\Users\tayna_97l6kwx\OneDrive\Documentos\3°Bimestre\Sistema de Lanchonete\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Cadastar.resources
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\bin\Debug\01 - Sistema de Lanchonete.exe.config
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\bin\Debug\01 - Sistema de Lanchonete.exe
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\bin\Debug\01 - Sistema de Lanchonete.pdb
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.csproj.AssemblyReference.cache
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Cadastar.resources
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Login.resources
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Properties.Resources.resources
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Form1.resources
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.csproj.GenerateResource.cache
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.csproj.CoreCompileInputs.cache
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.exe
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.pdb
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\bin\Debug\Guna.UI2.dll
+C:\Users\Family Torrente\Music\Sucesso\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.csproj.CopyComplete

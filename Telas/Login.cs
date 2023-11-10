@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace _01___Sistema_de_Lanchonete
 {
     public partial class Login : Form
@@ -15,14 +16,34 @@ namespace _01___Sistema_de_Lanchonete
         public Login()
         {
             InitializeComponent();
-        }
 
+        }
+     
         private void Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+  
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Tela_Cardapio a = new Tela_Cardapio();
+            a.ShowDialog();
+        }
+
+        private void tb_email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Tela_Cardapio a = new Tela_Cardapio();
+            a.ShowDialog();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
