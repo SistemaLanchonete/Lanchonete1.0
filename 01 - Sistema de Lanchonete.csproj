@@ -52,10 +52,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Tela Cardapio.cs">
+    <Compile Include="Telas\Tela Cardapio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tela Cardapio.Designer.cs">
+    <Compile Include="Telas\Tela Cardapio.Designer.cs">
       <DependentUpon>Tela Cardapio.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Cadastar.cs">

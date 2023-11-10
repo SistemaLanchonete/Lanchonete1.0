@@ -16,14 +16,36 @@ namespace _01___Sistema_de_Lanchonete
         public Cadastar()
         {
             InitializeComponent();
+            label8.Text = "";
+            label9.Text = "";
+            label6.Text = "";
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Cadrastar_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+        }
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             Pessoa pessoa = new Pessoa();
             string cpf = tx_cpf.Text;
@@ -50,8 +72,6 @@ namespace _01___Sistema_de_Lanchonete
                 Console.WriteLine($"Erro ao validar CPF: {ex.Message}");
             }
 
-
-
             if (tx_senha.Text == tx_Conf_senha.Text)
             {
 
@@ -69,68 +89,33 @@ namespace _01___Sistema_de_Lanchonete
             {
 
                 MessageBox.Show(tx_nome.Text + " " + tx_cpf.Text + " " + label1.Text + " " + tx_senha.Text + " " + tx_Conf_senha.Text + " " + tx_Conf_email.Text);
-
-
             }
             else
             {
                 label9.ForeColor = Color.Red;
                 label9.Text = "0s Emails não são os mesmos!";
             }
-        }
+        }  
 
-        private void label4_Click(object sender, EventArgs e)
+        private void tx_Conf_senha_TextChanged(object sender, EventArgs e)
         {
 
         }
-
-        private void Cadrastar_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
+        private void tx_Conf_email_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void guna2Button2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-                    }
-
-        private void tx_nome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tx_Email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
+            tx_nome.Clear();    
+            tx_Conf_email.Clear();
+            tx_senha.Clear();   
+            tx_cpf.Clear();
+            tx_Conf_senha.Clear();
+            tx_Conf_email.Clear();
+            tx_Email.Clear();   
+    
         }
     }
 }
