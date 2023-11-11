@@ -16,5 +16,16 @@ namespace _01___Sistema_de_Lanchonete
         {
             InitializeComponent();
         }
+
+        private void TelaCarrinho_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Tela_Pagamento j = new Tela_Pagamento();
+            j.ShowDialog();
+        }
     }
 }

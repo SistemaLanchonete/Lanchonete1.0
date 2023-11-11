@@ -52,10 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TelaCarrinho.cs">
+    <Compile Include="Telas\Tela Pagamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaCarrinho.Designer.cs">
+    <Compile Include="Telas\Tela Pagamento.Designer.cs">
+      <DependentUpon>Tela Pagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\TelaCarrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\TelaCarrinho.Designer.cs">
       <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Tela Cardapio.cs">
@@ -95,6 +101,9 @@
       <DependentUpon>Telinha de compras.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidarCPF.cs" />
+    <EmbeddedResource Include="Telas\Tela Pagamento.resx">
+      <DependentUpon>Tela Pagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Cadastar.resx">
       <DependentUpon>Cadastar.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Telas\Tela Cardapio.resx">
       <DependentUpon>Tela Cardapio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\TelaCarrinho.resx">
+      <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaInicio.resx">
       <DependentUpon>TelaInicio.cs</DependentUpon>
