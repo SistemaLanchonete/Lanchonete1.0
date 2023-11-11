@@ -72,5 +72,10 @@ namespace _01___Sistema_de_Lanchonete
         {
 
         }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
