@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastar));
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -49,7 +50,8 @@
             this.cb_sexo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.bt_salvar_cadrastro = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -271,6 +273,7 @@
             this.tx_Email.SelectedText = "";
             this.tx_Email.Size = new System.Drawing.Size(260, 35);
             this.tx_Email.TabIndex = 34;
+            this.tx_Email.TextChanged += new System.EventHandler(this.tx_Email_TextChanged);
             // 
             // tx_senha
             // 
@@ -349,28 +352,54 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Location = new System.Drawing.Point(-41, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(849, 67);
             this.panel1.TabIndex = 38;
             // 
-            // guna2Button1
+            // guna2Button3
             // 
-            this.guna2Button1.BorderRadius = 19;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.SlateBlue;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(41, 369);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 39;
-            this.guna2Button1.Text = "Salvar";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button3.BackgroundImage")));
+            this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2Button3.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.BorderRadius = 19;
+            this.guna2Button3.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.ImageOffset = new System.Drawing.Point(1, 0);
+            this.guna2Button3.Location = new System.Drawing.Point(63, 10);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.PressedColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2Button3.PressedDepth = 2;
+            this.guna2Button3.Size = new System.Drawing.Size(39, 57);
+            this.guna2Button3.TabIndex = 41;
+            this.guna2Button3.TextRenderingHint = System.Drawing.Text.TextRenderingHint.AntiAlias;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
+            // 
+            // bt_salvar_cadrastro
+            // 
+            this.bt_salvar_cadrastro.BorderRadius = 19;
+            this.bt_salvar_cadrastro.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bt_salvar_cadrastro.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bt_salvar_cadrastro.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bt_salvar_cadrastro.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_salvar_cadrastro.FillColor = System.Drawing.Color.SlateBlue;
+            this.bt_salvar_cadrastro.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bt_salvar_cadrastro.ForeColor = System.Drawing.Color.White;
+            this.bt_salvar_cadrastro.Location = new System.Drawing.Point(41, 368);
+            this.bt_salvar_cadrastro.Name = "bt_salvar_cadrastro";
+            this.bt_salvar_cadrastro.Size = new System.Drawing.Size(180, 45);
+            this.bt_salvar_cadrastro.TabIndex = 39;
+            this.bt_salvar_cadrastro.Text = "Salvar";
+            this.bt_salvar_cadrastro.Click += new System.EventHandler(this.bt_salvar_cadrastro_Click);
             // 
             // guna2Button2
             // 
@@ -396,7 +425,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.bt_salvar_cadrastro);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.cb_sexo);
             this.Controls.Add(this.tx_Conf_senha);
@@ -450,7 +479,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox cb_sexo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button bt_salvar_cadrastro;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

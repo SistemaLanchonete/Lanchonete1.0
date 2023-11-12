@@ -26,5 +26,10 @@ namespace _01___Sistema_de_Lanchonete
         {
 
         }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

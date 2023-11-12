@@ -151,6 +151,7 @@
             this.bt_cardapio.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_cardapio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_cardapio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_cardapio.Enabled = false;
             this.bt_cardapio.FillColor = System.Drawing.Color.Gray;
             this.bt_cardapio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_cardapio.ForeColor = System.Drawing.SystemColors.Window;
