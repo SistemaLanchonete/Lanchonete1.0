@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace _01___Sistema_de_Lanchonete
 {
-    public partial class Telinha_de_compras : Form
+    public partial class Hamburguer : Form
     {
-        public Telinha_de_compras()
+        public Hamburguer()
         {
             InitializeComponent();
+        }
+
+        private void Hamburguer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

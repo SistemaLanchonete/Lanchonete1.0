@@ -36,6 +36,9 @@
     <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.4.5\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
@@ -52,6 +55,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BatataFritas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BatataFritas.Designer.cs">
+      <DependentUpon>BatataFritas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Churros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Churros.Designer.cs">
+      <DependentUpon>Churros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contas.cs" />
+    <Compile Include="Telas dos Produtos\Salgados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Salgados.Designer.cs">
+      <DependentUpon>Salgados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas dos Produtos\PãoQueijo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas dos Produtos\PãoQueijo2.Designer.cs">
+      <DependentUpon>PãoQueijo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Salgadinhos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Salgadinhos.Designer.cs">
+      <DependentUpon>Salgadinhos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Hamburguer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas dos Produtos\Hamburguer.Designer.cs">
+      <DependentUpon>Hamburguer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Tela Pagamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,13 +134,28 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas\Telinha de compras.cs">
+    <Compile Include="Telas dos Produtos\Pizza.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Telinha de compras.Designer.cs">
-      <DependentUpon>Telinha de compras.cs</DependentUpon>
+    <Compile Include="Telas dos Produtos\Pizza.Designer.cs">
+      <DependentUpon>Pizza.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidarCPF.cs" />
+    <EmbeddedResource Include="Telas dos Produtos\Churros.resx">
+      <DependentUpon>Churros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas dos Produtos\Hamburguer.resx">
+      <DependentUpon>Hamburguer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas dos Produtos\Salgados.resx">
+      <DependentUpon>Salgados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas dos Produtos\PãoQueijo2.resx">
+      <DependentUpon>PãoQueijo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas dos Produtos\Salgadinhos.resx">
+      <DependentUpon>Salgadinhos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Tela Pagamento.resx">
       <DependentUpon>Tela Pagamento.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,8 +183,8 @@
     <EmbeddedResource Include="Telas\TelaInicio.resx">
       <DependentUpon>TelaInicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Telinha de compras.resx">
-      <DependentUpon>Telinha de compras.cs</DependentUpon>
+    <EmbeddedResource Include="Telas dos Produtos\Pizza.resx">
+      <DependentUpon>Pizza.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

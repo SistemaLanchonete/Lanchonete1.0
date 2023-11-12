@@ -55,7 +55,7 @@ namespace _01___Sistema_de_Lanchonete
         private void button2_Click(object sender, EventArgs e)
         {
             hidSubMenu();
-            openChildForm(new Telinha_de_compras());
+            openChildForm(new Pizza());
         }
 
         private void button3_Click(object sender, EventArgs e)

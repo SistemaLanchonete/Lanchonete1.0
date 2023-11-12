@@ -1,6 +1,6 @@
 ﻿namespace _01___Sistema_de_Lanchonete
 {
-    partial class Telinha_de_compras
+    partial class Pizza
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Telinha_de_compras));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pizza));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_quantidade = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -98,14 +98,14 @@
             this.guna2Button3.TabIndex = 3;
             this.guna2Button3.Text = "Estoque";
             // 
-            // label1
+            // lb_quantidade
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(539, 273);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.lb_quantidade.AutoSize = true;
+            this.lb_quantidade.Location = new System.Drawing.Point(539, 273);
+            this.lb_quantidade.Name = "lb_quantidade";
+            this.lb_quantidade.Size = new System.Drawing.Size(19, 13);
+            this.lb_quantidade.TabIndex = 4;
+            this.lb_quantidade.Text = "Nº";
             // 
             // label2
             // 
@@ -116,18 +116,18 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Pizza, bonita de vista, incrível no sabor";
             // 
-            // Telinha_de_compras
+            // Pizza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 360);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_quantidade);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Telinha_de_compras";
+            this.Name = "Pizza";
             this.Text = "Telinha_de_compras";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -141,7 +141,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_quantidade;
         private System.Windows.Forms.Label label2;
     }
 }
