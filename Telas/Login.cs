@@ -18,12 +18,17 @@ namespace _01___Sistema_de_Lanchonete
         public Login()
         {
             InitializeComponent();
-            
+          
         }
+      
 
+        public string Pergunta { get; set; }
+        public bool LembrarSenha { get; set; }
+        List<LembraSenha> respostas = new List<LembraSenha>();
 
         private void Login_Load(object sender, EventArgs e)
         {
+            tx_senha.UseSystemPasswordChar = true;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -55,7 +60,7 @@ namespace _01___Sistema_de_Lanchonete
             //else
             //{
 
-            //    int conta = 0;
+            //    int conta = 0;.
             //    if (tx_email.Text != "")
             //    {
             //        conta = Convert.ToInt32(tx_email.Text);
@@ -96,13 +101,50 @@ namespace _01___Sistema_de_Lanchonete
                 MessageBox.Show("O e-mail não é válido. Por favor, insira um e-mail válido.", "Validação de E-mail", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private bool IsValidEmail(string email)
-        {
-            // Esta expressão regular verifica se o formato do e-mail é válido
-            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
-            Regex regex = new Regex(pattern);
+            private bool IsValidEmail(string email)
+            {
+                // Esta expressão regular verifica se o formato do e-mail é válido
+                string pattern = @"([A-z]+@[A-z]+\.[A-z\.]{2,5})$"; // esse é o Regex (uma regra de endereço eletronico)    
+                Regex regex = new Regex(pattern);
 
-            return regex.IsMatch(email);
+                return regex.IsMatch(email);
+            }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            LembraSenha resposta = new LembraSenha();
+            {
+                
+              if (checkBox1.Checked)
+              {
+                 respostas.Add(resposta);
+              }
+                foreach (var respostass in respostas)
+                {
+                    Console.WriteLine($"Resposta: {respostas.ToString()}");
+                    tx_senha.Text = respostass.ToString();
+                }
+               
+            }
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            tx_senha.UseSystemPasswordChar = !tx_senha.UseSystemPasswordChar;
+
+            // Permite alternar entre a exibição e ocultação da senha cada vez que é chamada
+            // tx_senha é uma instância do controle TextBox onde o usuário insere a senha.
+            // UseSystemPasswordChar verifica se é true ou false a vizualização
+        }
+
+        private void tx_senha_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

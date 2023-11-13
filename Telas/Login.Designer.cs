@@ -39,6 +39,7 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.lb_senhaI = new System.Windows.Forms.Label();
             this.bt_salvar = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +79,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(171, 71);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checkBox1
             // 
@@ -91,6 +93,7 @@
             this.checkBox1.TabIndex = 8;
             this.checkBox1.Text = "Lembrar Senha";
             this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // tx_email
             // 
@@ -134,12 +137,13 @@
             this.tx_senha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.tx_senha.Location = new System.Drawing.Point(164, 215);
             this.tx_senha.Name = "tx_senha";
-            this.tx_senha.PasswordChar = '*';
+            this.tx_senha.PasswordChar = '\0';
             this.tx_senha.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tx_senha.PlaceholderText = "";
             this.tx_senha.SelectedText = "";
             this.tx_senha.Size = new System.Drawing.Size(367, 31);
             this.tx_senha.TabIndex = 13;
+            this.tx_senha.TextChanged += new System.EventHandler(this.tx_senha_TextChanged);
             // 
             // bt_cardapio
             // 
@@ -213,6 +217,24 @@
             this.bt_salvar.Text = "Salvar";
             this.bt_salvar.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Button1.BackgroundImage")));
+            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.guna2Button1.BorderRadius = 70;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(477, 223);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(18, 19);
+            this.guna2Button1.TabIndex = 18;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -221,6 +243,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(648, 383);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.bt_salvar);
             this.Controls.Add(this.lb_senhaI);
             this.Controls.Add(this.guna2Button2);
@@ -256,5 +279,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label lb_senhaI;
         private Guna.UI2.WinForms.Guna2Button bt_salvar;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

@@ -18,16 +18,10 @@ namespace _01___Sistema_de_Lanchonete
             InitializeComponent();      
         }
         bool precoVisivel = true;
-        private void button6_Click(object sender, EventArgs e)
-        {
-        }
-        private void Opcoes_Click(object sender, EventArgs e)
-        {
-    
-        }
+      
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Pag1());
+            openChildForm(new Pag1()); // abre a janela na mesma janela
         }
         private void button3_Click(object sender, EventArgs e)
         {
@@ -56,57 +50,20 @@ namespace _01___Sistema_de_Lanchonete
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Controls.Add(childForm);  // define o local onde ira abrir
             panelChildForm.Tag = childForm; 
             childForm.BringToFront();
             childForm.Show();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Carrinho());
-        }
 
         private void panelChildForm_Paint(object sender, PaintEventArgs e)
         {
        
         }
-        
-      
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-        
-    
-
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Carrinho());
-        }
-
-        private void bt_estoque_churros_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel_tools_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
         {
 
         }

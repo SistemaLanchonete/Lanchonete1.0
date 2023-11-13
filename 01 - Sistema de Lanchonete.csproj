@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LembraSenha.cs" />
     <Compile Include="Telas dos Produtos\Pag4.cs">
       <SubType>Form</SubType>
     </Compile>

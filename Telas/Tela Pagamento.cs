@@ -77,15 +77,6 @@ namespace _01___Sistema_de_Lanchonete
             lista_compra_paga.Items.Clear();
             lb_total_paga.Text = "R$ 0.00 ";
         }
-        private void lista_produtos_DoubleClick(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-        }
 
   
         private void Tela_Pagamento_Load(object sender, EventArgs e)
@@ -130,6 +121,43 @@ namespace _01___Sistema_de_Lanchonete
         {
 
         }
-     
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Enabled == true)
+            {
+                checkBox2.Enabled = false;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Enabled == true)
+            {
+                checkBox1.Enabled = false;
+            }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (guna2Button1.Enabled)
+            {
+                checkBox1.Enabled = true;
+                checkBox2.Enabled = true;
+                checkBox1.Checked = false;
+                checkBox2.Checked = false;
+
+            }
+            if (!checkBox1.Enabled)
+            {
+                checkBox1.Enabled = true;
+                checkBox1.Checked = false;
+            }
+            else
+            {
+                checkBox2.Enabled = true;
+                checkBox2.Checked = false;
+            }
+        }
     }
 }
