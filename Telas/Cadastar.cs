@@ -19,6 +19,7 @@ namespace _01___Sistema_de_Lanchonete
             label8.Text = "";
             label9.Text = "";
             label6.Text = "";
+
         }
 
         private void Cadrastar_Load(object sender, EventArgs e)
@@ -45,56 +46,69 @@ namespace _01___Sistema_de_Lanchonete
         {
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void bt_salvar_cadrastro_Click(object sender, EventArgs e)
         {
-            Pessoa pessoa = new Pessoa();
-            string cpf = tx_cpf.Text;
+        
+                Pessoa pessoa = new Pessoa();
+                string cpf = tx_cpf.Text;
+                bool dadosValidos = true; // Verificador de todos os campos válidos.
 
-            try
-            {
-                ValidarCPF validarCpf = new ValidarCPF();
-                if (validarCpf.ValidaCPF(cpf))
+                try
                 {
-                    label6.Visible = false;
-                    pessoa.Cpf = cpf;
+                    
+                     
+                    ValidarCPF validarCpf = new ValidarCPF();
+                    if (validarCpf.ValidaCPF(cpf))
+                    {
+                        label6.Visible = false;
+                        pessoa.Cpf = cpf;
+                    }
+                    else
+                    {
+                     
+                        label6.ForeColor = Color.Red;
+                        label6.Text = "CPF é inválido";
+                        tx_cpf.Clear();
+                        Console.ResetColor();
+                        dadosValidos = false;
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Tratar a exceção, se necessário
+                    Console.WriteLine($"Erro ao validar CPF: {ex.Message}");
+                    dadosValidos = false;
+                    
+                }
+
+                if (tx_senha.Text == tx_Conf_senha.Text)
+                {
+                    label8.Text = "";
                 }
                 else
                 {
-                    label6.ForeColor = Color.Red;
-                    label6.Text = "CPF é inválido";
-                    tx_cpf.Clear();
-                    Console.ResetColor();
+                    label8.ForeColor = Color.Red;
+                    label8.Text = "As senha não são as mesmas!";
+                    dadosValidos = false;
                 }
-            }
-            catch (Exception ex)
-            {
-                // Tratar a exceção, se necessário
-                Console.WriteLine($"Erro ao validar CPF: {ex.Message}");
-            }
 
-            if (tx_senha.Text == tx_Conf_senha.Text)
-            {
+                if (tx_Email.Text == tx_Conf_email.Text)
+                {
+                    label9.Text = "";
+                }
+                else
+                {
+                    label9.ForeColor = Color.Red;
+                    label9.Text = "0s Emails não são os mesmos!";
+                    dadosValidos = false;
+                }
 
-                MessageBox.Show(tx_nome.Text + " " + tx_cpf.Text + " " + label1.Text + " " + tx_senha.Text + " " + tx_Conf_senha.Text);
-
-
-            }
-            else
-            {
-                label8.ForeColor = Color.Red;
-                label8.Text = "As senha não são as mesmas!";
-            }
-
-            if (label1.Text == tx_Conf_email.Text)
-            {
-
-                MessageBox.Show(tx_nome.Text + " " + tx_cpf.Text + " " + label1.Text + " " + tx_senha.Text + " " + tx_Conf_senha.Text + " " + tx_Conf_email.Text);
-            }
-            else
-            {
-                label9.ForeColor = Color.Red;
-                label9.Text = "0s Emails não são os mesmos!";
-            }
+                if (dadosValidos)
+                {
+                    MessageBox.Show($"Os dados são: {tx_nome.Text + " " + tx_cpf.Text + " " + label1.Text + " " + tx_senha.Text + " " + tx_Conf_senha.Text}");
+                    MessageBox.Show($"Salvo com Sucesso!");
+                }
         }  
 
         private void tx_Conf_senha_TextChanged(object sender, EventArgs e)
@@ -116,6 +130,16 @@ namespace _01___Sistema_de_Lanchonete
             tx_Conf_email.Clear();
             tx_Email.Clear();   
     
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tx_Email_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

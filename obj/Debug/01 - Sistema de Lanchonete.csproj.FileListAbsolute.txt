@@ -63,8 +63,11 @@ C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\01 - Sistema d
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.exe
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\01 - Sistema de Lanchonete.pdb
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Tela_Cardapio.resources
-C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Telinha_de_compras.resources
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Tela_Pagamento.resources
-C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.TelaCarrinho.resources
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Carrinho.resources
+C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Pag1.resources
+C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.pag2.resources
+C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Pag3.resources
+C:\Users\Family Torrente\Music\Sucesso\oi\Lanchonete1.0\obj\Debug\_01___Sistema_de_Lanchonete.Pag4.resources

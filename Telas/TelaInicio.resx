@@ -121,7 +121,7 @@
   <data name="guna2Panel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAi4AAAKKCAYAAAAax9AnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAsydJREFUeF7t/cuuZkeWnQtmBoOM7dsvdDqdZJDJCMY5EE4ju3oBvYS6hXqBQpXU
+        DAAACwwBP0AiyAAAsydJREFUeF7t/cuuZkeWnQtmBoOM7dsvdDqdZJDJCMY5EE4ju3oBvYS6hXqBQpXU
         ElAXqH1QL1D1IKV6j1JHENTQBYIEQYk6kLIhKUKqMeY/x/yH2bJ/O0PCKeAoxgeMsLXsttbeTk8fOW2a
         rT97if/yX/7Ln/el2O9Pff6b4Zympa5uDNXtpXOqE2yTuqp4NObQT6XqHz6LfGrew/yf6r/f62c5jiPd
         Z67r4s5y7+09ru4P44ZTP+/v7S+hfq2pqwuwXffVnR536e+lt5O+v4x5iZfmewn0fXHMqf5Rndfv90J1
@@ -891,7 +891,7 @@
   <data name="guna2CirclePictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
-        1QAADdUBPdZY8QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABZjSURBVHhe7dpr
+        1AAADdQB75G6FQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABZjSURBVHhe7dpr
         juRGkoVRLa2XNkvrnc0oprugVOpWVT4izEi/5wAf9NeDNKY5UPqD2/tfSVJllEtDIUk6P8qloZAknR/l
         0lBIks6PcmkoJEnnR7k0FJKk86NcGgpJ0vlRLg2FJOn8KJeGQpJ0fpRLQyFJOj/KpaGQJJ0f5dJQSJLO
         j3JpKCRJ50e5NBSSpPOjXBoKSdL5US4NhSTp/CiXhkKSdH6US0MhSTo/yqWhkCSdH+XSUEiSzo9yaSgk

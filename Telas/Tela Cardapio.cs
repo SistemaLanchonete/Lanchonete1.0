@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
 namespace _01___Sistema_de_Lanchonete
@@ -14,98 +15,32 @@ namespace _01___Sistema_de_Lanchonete
     {
         public Tela_Cardapio()
         {
-            InitializeComponent();
-          
+            InitializeComponent();      
         }
-        private void customizeDesigner()
-        {
-            panelSideMenu.Visible = false;
-            panel_sub_menu.Visible = false; 
-            panel_tools.Visible = false;
-        }
-        private void hidSubMenu()
-        {
-            if (panel_sub_menu.Visible == true)
-                panel_sub_menu.Visible = false;
-            if (panel_tools.Visible == true)
-                panel_tools.Visible = false;    
-                
-        }
-        private void showSubMenu (Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hidSubMenu();
-                subMenu.Visible = true; 
-            }
-            else
-                subMenu.Visible = false;
-        }
-
+        bool precoVisivel = true;
         private void button6_Click(object sender, EventArgs e)
         {
-
         }
-
         private void Opcoes_Click(object sender, EventArgs e)
         {
-            showSubMenu(panel_sub_menu); 
+    
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            hidSubMenu();
-            openChildForm(new Pizza());
+            openChildForm(new Pag1());
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            hidSubMenu();
+            openChildForm(new pag2());
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
-            hidSubMenu();
+            openChildForm(new Pag3());
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-      
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void button12_Click(object sender, EventArgs e)
-        {
-       
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-         
+            openChildForm(new Pag4());
         }
 
         private void panelSideMenu_Paint(object sender, PaintEventArgs e)
@@ -129,7 +64,56 @@ namespace _01___Sistema_de_Lanchonete
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new TelaCarrinho());
+            openChildForm(new Carrinho());
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+       
+        }
+        
+      
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        
+    
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Carrinho());
+        }
+
+        private void bt_estoque_churros_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_tools_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

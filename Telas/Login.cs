@@ -18,10 +18,9 @@ namespace _01___Sistema_de_Lanchonete
         public Login()
         {
             InitializeComponent();
+            
         }
-             private bool butaosalva = false;
-             
-    
+
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -35,15 +34,9 @@ namespace _01___Sistema_de_Lanchonete
 
         private void tb_email_TextChanged(object sender, EventArgs e)
         {
-
         }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-          
-            butaosalva = false;
-            bt_salvar.Enabled = false;
-            bt_cardapio.Enabled = false;
             Tela_Cardapio a = new Tela_Cardapio();
             a.ShowDialog();
         }
@@ -87,24 +80,16 @@ namespace _01___Sistema_de_Lanchonete
         private void guna2Button3_Click(object sender, EventArgs e) // Salvar
         {
 
-            bt_salvar.Enabled = false;
-            bt_cardapio.Enabled = true;
-            butaosalva = true;
-
-            if (bt_salvar.Enabled == true)
-            {
-                
-            }
-
-            else if (bt_salvar.Enabled != true)
-           {
-               
-            }
             string email = tx_email.Text.Trim();
 
             if (IsValidEmail(email))
             {
                 MessageBox.Show("Salvo com Sucesso!", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (bt_salvar.Enabled)
+                {
+                    bt_cardapio.Enabled = true;
+                    bt_salvar.Enabled = false;
+                }
             }
             else
             {

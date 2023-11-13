@@ -55,54 +55,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BatataFritas.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="BatataFritas.Designer.cs">
-      <DependentUpon>BatataFritas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas dos Produtos\Churros.cs">
+    <Compile Include="Telas dos Produtos\Pag4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas dos Produtos\Churros.Designer.cs">
-      <DependentUpon>Churros.cs</DependentUpon>
+    <Compile Include="Telas dos Produtos\Pag4.Designer.cs">
+      <DependentUpon>Pag4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Contas.cs" />
-    <Compile Include="Telas dos Produtos\Salgados.cs">
+    <Compile Include="Telas dos Produtos\Pag3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas dos Produtos\Salgados.Designer.cs">
-      <DependentUpon>Salgados.cs</DependentUpon>
+    <Compile Include="Telas dos Produtos\Pag3.Designer.cs">
+      <DependentUpon>Pag3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas dos Produtos\PãoQueijo2.cs">
+    <Compile Include="Telas dos Produtos\pag2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas dos Produtos\PãoQueijo2.Designer.cs">
-      <DependentUpon>PãoQueijo2.cs</DependentUpon>
+    <Compile Include="Telas dos Produtos\pag2.Designer.cs">
+      <DependentUpon>pag2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas dos Produtos\Salgadinhos.cs">
+    <Compile Include="Telas dos Produtos\Pag1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas dos Produtos\Salgadinhos.Designer.cs">
-      <DependentUpon>Salgadinhos.cs</DependentUpon>
+    <Compile Include="Telas dos Produtos\Pag1.Designer.cs">
+      <DependentUpon>Pag1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas dos Produtos\Hamburguer.cs">
+    <Compile Include="Telas\Carrinho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas dos Produtos\Hamburguer.Designer.cs">
-      <DependentUpon>Hamburguer.cs</DependentUpon>
+    <Compile Include="Telas\Carrinho.Designer.cs">
+      <DependentUpon>Carrinho.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Tela Pagamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Tela Pagamento.Designer.cs">
       <DependentUpon>Tela Pagamento.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\TelaCarrinho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\TelaCarrinho.Designer.cs">
-      <DependentUpon>TelaCarrinho.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Tela Cardapio.cs">
       <SubType>Form</SubType>
@@ -125,36 +112,29 @@
     <Compile Include="Telas\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produtos.cs" />
     <Compile Include="Telas\TelaInicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\TelaInicio.Designer.cs">
       <DependentUpon>TelaInicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Entidades\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Telas dos Produtos\Pizza.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas dos Produtos\Pizza.Designer.cs">
-      <DependentUpon>Pizza.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ValidarCPF.cs" />
-    <EmbeddedResource Include="Telas dos Produtos\Churros.resx">
-      <DependentUpon>Churros.cs</DependentUpon>
+    <Compile Include="Entidades\ValidarCPF.cs" />
+    <EmbeddedResource Include="Telas dos Produtos\Pag1.resx">
+      <DependentUpon>Pag1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas dos Produtos\Hamburguer.resx">
-      <DependentUpon>Hamburguer.cs</DependentUpon>
+    <EmbeddedResource Include="Telas dos Produtos\pag2.resx">
+      <DependentUpon>pag2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas dos Produtos\Salgados.resx">
-      <DependentUpon>Salgados.cs</DependentUpon>
+    <EmbeddedResource Include="Telas dos Produtos\Pag3.resx">
+      <DependentUpon>Pag3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas dos Produtos\PãoQueijo2.resx">
-      <DependentUpon>PãoQueijo2.cs</DependentUpon>
+    <EmbeddedResource Include="Telas dos Produtos\Pag4.resx">
+      <DependentUpon>Pag4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas dos Produtos\Salgadinhos.resx">
-      <DependentUpon>Salgadinhos.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Carrinho.resx">
+      <DependentUpon>Carrinho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Tela Pagamento.resx">
       <DependentUpon>Tela Pagamento.cs</DependentUpon>
@@ -177,14 +157,8 @@
     <EmbeddedResource Include="Telas\Tela Cardapio.resx">
       <DependentUpon>Tela Cardapio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\TelaCarrinho.resx">
-      <DependentUpon>TelaCarrinho.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\TelaInicio.resx">
       <DependentUpon>TelaInicio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas dos Produtos\Pizza.resx">
-      <DependentUpon>Pizza.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
