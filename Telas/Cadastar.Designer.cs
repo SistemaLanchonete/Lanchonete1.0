@@ -189,7 +189,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label8.Location = new System.Drawing.Point(138, 330);
+            this.label8.Location = new System.Drawing.Point(138, 341);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 13);
@@ -375,7 +375,7 @@
             this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.ImageOffset = new System.Drawing.Point(1, 0);
-            this.guna2Button3.Location = new System.Drawing.Point(63, 10);
+            this.guna2Button3.Location = new System.Drawing.Point(78, 10);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.PressedColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2Button3.PressedDepth = 2;
@@ -480,8 +480,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox cb_sexo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button bt_salvar_cadrastro;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
     }
 }

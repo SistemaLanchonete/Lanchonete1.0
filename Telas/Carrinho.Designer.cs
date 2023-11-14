@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carrinho));
-            this.lista_produtos = new System.Windows.Forms.ListBox();
             this.lista_compra = new System.Windows.Forms.ListBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,23 +40,10 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2CheckBox1 = new Guna.UI2.WinForms.Guna2CheckBox();
+            this.lista_produto = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lista_produtos
-            // 
-            this.lista_produtos.BackColor = System.Drawing.Color.White;
-            this.lista_produtos.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lista_produtos.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lista_produtos.FormattingEnabled = true;
-            this.lista_produtos.ItemHeight = 18;
-            this.lista_produtos.Location = new System.Drawing.Point(94, 146);
-            this.lista_produtos.Name = "lista_produtos";
-            this.lista_produtos.Size = new System.Drawing.Size(295, 270);
-            this.lista_produtos.TabIndex = 0;
-            this.lista_produtos.SelectedIndexChanged += new System.EventHandler(this.lista_produtos_SelectedIndexChanged);
-            this.lista_produtos.DoubleClick += new System.EventHandler(this.lista_produtos_DoubleClick);
             // 
             // lista_compra
             // 
@@ -221,11 +207,25 @@
             this.guna2CheckBox1.UncheckedState.BorderThickness = 0;
             this.guna2CheckBox1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             // 
+            // lista_produto
+            // 
+            this.lista_produto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lista_produto.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lista_produto.FormattingEnabled = true;
+            this.lista_produto.ItemHeight = 18;
+            this.lista_produto.Location = new System.Drawing.Point(35, 146);
+            this.lista_produto.Name = "lista_produto";
+            this.lista_produto.Size = new System.Drawing.Size(335, 216);
+            this.lista_produto.TabIndex = 28;
+            this.lista_produto.SelectedIndexChanged += new System.EventHandler(this.lista_produto_SelectedIndexChanged);
+            this.lista_produto.DoubleClick += new System.EventHandler(this.lista_produto_DoubleClick);
+            // 
             // Carrinho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 512);
+            this.Controls.Add(this.lista_produto);
             this.Controls.Add(this.guna2CheckBox1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.guna2Button1);
@@ -235,7 +235,6 @@
             this.Controls.Add(this.bt_nvcompra);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.lista_compra);
-            this.Controls.Add(this.lista_produtos);
             this.Name = "Carrinho";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Carrinho";
@@ -249,8 +248,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lista_produtos;
         private System.Windows.Forms.ListBox lista_compra;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Label label1;
@@ -262,5 +259,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2CheckBox guna2CheckBox1;
+        private System.Windows.Forms.ListBox lista_produto;
     }
 }

@@ -50,11 +50,7 @@ namespace _01___Sistema_de_Lanchonete
             
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog(); 
-        }
+    
  
  
         private void bt_estoque_Click(object sender, EventArgs e)
@@ -62,17 +58,9 @@ namespace _01___Sistema_de_Lanchonete
             bt_estoque.Text = "15";
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog();
-        }
+        
 
-        private void guna2Button8_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog();
-        }
+    
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {

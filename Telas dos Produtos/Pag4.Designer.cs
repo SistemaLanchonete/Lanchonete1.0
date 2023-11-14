@@ -30,29 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pag4));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.bt_estoque_hamburguer = new Guna.UI2.WinForms.Guna2Button();
+            this.bt_verpreco_hamburguer = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.bt_estoque_cocacola = new Guna.UI2.WinForms.Guna2Button();
             this.bt_verpreco_cocacola = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_estoque_tapioca = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bt_verpreco_tapioca = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.bt_estoque_hamburguer = new Guna.UI2.WinForms.Guna2Button();
-            this.bt_verpreco_hamburguer = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,7 +58,6 @@
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.bt_estoque_tapioca);
@@ -72,33 +68,82 @@
             this.panel1.Size = new System.Drawing.Size(684, 597);
             this.panel1.TabIndex = 10;
             // 
-            // guna2Button4
+            // panel3
             // 
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 17;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button4.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button4.Location = new System.Drawing.Point(440, 69);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(178, 44);
-            this.guna2Button4.TabIndex = 8;
-            this.guna2Button4.Text = "Carrinho";
-            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.bt_estoque_hamburguer);
+            this.panel3.Controls.Add(this.bt_verpreco_hamburguer);
+            this.panel3.Location = new System.Drawing.Point(26, 398);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(674, 170);
+            this.panel3.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(271, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(140, 25);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Hamburguer";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(-66, -131);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(293, 431);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            // 
+            // bt_estoque_hamburguer
+            // 
+            this.bt_estoque_hamburguer.BackColor = System.Drawing.Color.Transparent;
+            this.bt_estoque_hamburguer.BorderColor = System.Drawing.Color.Blue;
+            this.bt_estoque_hamburguer.BorderRadius = 15;
+            this.bt_estoque_hamburguer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bt_estoque_hamburguer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bt_estoque_hamburguer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bt_estoque_hamburguer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_estoque_hamburguer.FillColor = System.Drawing.SystemColors.GrayText;
+            this.bt_estoque_hamburguer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_estoque_hamburguer.ForeColor = System.Drawing.Color.White;
+            this.bt_estoque_hamburguer.Location = new System.Drawing.Point(263, 102);
+            this.bt_estoque_hamburguer.Name = "bt_estoque_hamburguer";
+            this.bt_estoque_hamburguer.Size = new System.Drawing.Size(127, 36);
+            this.bt_estoque_hamburguer.TabIndex = 5;
+            this.bt_estoque_hamburguer.Text = "Estoque";
+            this.bt_estoque_hamburguer.Click += new System.EventHandler(this.guna2Button5_Click);
+            // 
+            // bt_verpreco_hamburguer
+            // 
+            this.bt_verpreco_hamburguer.BackColor = System.Drawing.Color.Transparent;
+            this.bt_verpreco_hamburguer.BorderColor = System.Drawing.Color.Blue;
+            this.bt_verpreco_hamburguer.BorderRadius = 15;
+            this.bt_verpreco_hamburguer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.bt_verpreco_hamburguer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.bt_verpreco_hamburguer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.bt_verpreco_hamburguer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.bt_verpreco_hamburguer.FillColor = System.Drawing.SystemColors.GrayText;
+            this.bt_verpreco_hamburguer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_verpreco_hamburguer.ForeColor = System.Drawing.Color.White;
+            this.bt_verpreco_hamburguer.Location = new System.Drawing.Point(261, 51);
+            this.bt_verpreco_hamburguer.Name = "bt_verpreco_hamburguer";
+            this.bt_verpreco_hamburguer.Size = new System.Drawing.Size(127, 36);
+            this.bt_verpreco_hamburguer.TabIndex = 4;
+            this.bt_verpreco_hamburguer.Text = "Ver Preço";
+            this.bt_verpreco_hamburguer.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.guna2Button1);
             this.panel2.Controls.Add(this.bt_estoque_cocacola);
             this.panel2.Controls.Add(this.bt_verpreco_cocacola);
             this.panel2.Location = new System.Drawing.Point(-1, 203);
@@ -127,27 +172,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 17;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button1.Location = new System.Drawing.Point(442, 64);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(178, 44);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "Carrinho";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // bt_estoque_cocacola
             // 
@@ -247,99 +271,6 @@
             this.bt_verpreco_tapioca.Text = "Ver Preço";
             this.bt_verpreco_tapioca.Click += new System.EventHandler(this.bt_verpreco_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.guna2Button7);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.bt_estoque_hamburguer);
-            this.panel3.Controls.Add(this.bt_verpreco_hamburguer);
-            this.panel3.Location = new System.Drawing.Point(26, 398);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(674, 170);
-            this.panel3.TabIndex = 11;
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.BorderRadius = 17;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.YellowGreen;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button7.Location = new System.Drawing.Point(414, 65);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(178, 44);
-            this.guna2Button7.TabIndex = 8;
-            this.guna2Button7.Text = "Carrinho";
-            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(271, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Hamburguer";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(-66, -131);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(293, 431);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 6;
-            this.pictureBox3.TabStop = false;
-            // 
-            // bt_estoque_hamburguer
-            // 
-            this.bt_estoque_hamburguer.BackColor = System.Drawing.Color.Transparent;
-            this.bt_estoque_hamburguer.BorderColor = System.Drawing.Color.Blue;
-            this.bt_estoque_hamburguer.BorderRadius = 15;
-            this.bt_estoque_hamburguer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_estoque_hamburguer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_estoque_hamburguer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_estoque_hamburguer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_estoque_hamburguer.FillColor = System.Drawing.SystemColors.GrayText;
-            this.bt_estoque_hamburguer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_estoque_hamburguer.ForeColor = System.Drawing.Color.White;
-            this.bt_estoque_hamburguer.Location = new System.Drawing.Point(263, 102);
-            this.bt_estoque_hamburguer.Name = "bt_estoque_hamburguer";
-            this.bt_estoque_hamburguer.Size = new System.Drawing.Size(127, 36);
-            this.bt_estoque_hamburguer.TabIndex = 5;
-            this.bt_estoque_hamburguer.Text = "Estoque";
-            this.bt_estoque_hamburguer.Click += new System.EventHandler(this.guna2Button5_Click);
-            // 
-            // bt_verpreco_hamburguer
-            // 
-            this.bt_verpreco_hamburguer.BackColor = System.Drawing.Color.Transparent;
-            this.bt_verpreco_hamburguer.BorderColor = System.Drawing.Color.Blue;
-            this.bt_verpreco_hamburguer.BorderRadius = 15;
-            this.bt_verpreco_hamburguer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_verpreco_hamburguer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_verpreco_hamburguer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_verpreco_hamburguer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_verpreco_hamburguer.FillColor = System.Drawing.SystemColors.GrayText;
-            this.bt_verpreco_hamburguer.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_verpreco_hamburguer.ForeColor = System.Drawing.Color.White;
-            this.bt_verpreco_hamburguer.Location = new System.Drawing.Point(261, 51);
-            this.bt_verpreco_hamburguer.Name = "bt_verpreco_hamburguer";
-            this.bt_verpreco_hamburguer.Size = new System.Drawing.Size(127, 36);
-            this.bt_verpreco_hamburguer.TabIndex = 4;
-            this.bt_verpreco_hamburguer.Text = "Ver Preço";
-            this.bt_verpreco_hamburguer.Click += new System.EventHandler(this.guna2Button6_Click);
-            // 
             // Pag4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -353,13 +284,13 @@
             this.Text = "Pag4";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -367,10 +298,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
         internal System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button bt_estoque_cocacola;
         private Guna.UI2.WinForms.Guna2Button bt_verpreco_cocacola;
         private System.Windows.Forms.Label label1;
@@ -379,7 +308,6 @@
         private Guna.UI2.WinForms.Guna2Button bt_verpreco_tapioca;
         private System.Windows.Forms.PictureBox pictureBox2;
         internal System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2Button bt_estoque_hamburguer;

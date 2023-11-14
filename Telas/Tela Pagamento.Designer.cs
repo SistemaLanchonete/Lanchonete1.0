@@ -48,7 +48,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.lb_total_paga = new System.Windows.Forms.Label();
             this.lista_produtos_paga = new System.Windows.Forms.ListBox();
-            this.lista_compra_paga = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -273,7 +272,7 @@
             this.lb_total_paga.BackColor = System.Drawing.Color.Transparent;
             this.lb_total_paga.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lb_total_paga.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_total_paga.Location = new System.Drawing.Point(750, 36);
+            this.lb_total_paga.Location = new System.Drawing.Point(596, 298);
             this.lb_total_paga.Name = "lb_total_paga";
             this.lb_total_paga.Size = new System.Drawing.Size(73, 33);
             this.lb_total_paga.TabIndex = 23;
@@ -290,23 +289,11 @@
             this.lista_produtos_paga.TabIndex = 3;
             this.lista_produtos_paga.SelectedIndexChanged += new System.EventHandler(this.lista_produtos_paga_SelectedIndexChanged);
             // 
-            // lista_compra_paga
-            // 
-            this.lista_compra_paga.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.lista_compra_paga.FormattingEnabled = true;
-            this.lista_compra_paga.Location = new System.Drawing.Point(601, 258);
-            this.lista_compra_paga.Name = "lista_compra_paga";
-            this.lista_compra_paga.Size = new System.Drawing.Size(235, 108);
-            this.lista_compra_paga.TabIndex = 24;
-            this.lista_compra_paga.DoubleClick += new System.EventHandler(this.lista_compra_paga_DoubleClick);
-            this.lista_compra_paga.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lista_compra_paga_MouseDoubleClick);
-            // 
             // Tela_Pagamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 491);
-            this.Controls.Add(this.lista_compra_paga);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.lb_total_paga);
             this.Controls.Add(this.guna2Button1);
@@ -358,6 +345,5 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Label lb_total_paga;
         private System.Windows.Forms.ListBox lista_produtos_paga;
-        private System.Windows.Forms.ListBox lista_compra_paga;
     }
 }

@@ -55,9 +55,7 @@ namespace _01___Sistema_de_Lanchonete
         }
         private void AdicionarProdutoCompra(produto p) // Add os produto em compras quando clico sobre algum produto em lista produto
         {
-            LISTA_COMPRAS_PAGA.Add(p); // Aqui estva o erro (era lista produto que projetava errado, e então os produtos serão levados para lista compra)
-            lista_compra_paga.Items.Add(ConstruirLinhaProduto(p)); // Aqui coloca os produtos na lista compra
-
+      
             var total = LISTA_COMPRAS_PAGA.Sum(I => I.preco);
             lb_total_paga.Text = total.ToString("R$ 0.00");
         }
@@ -74,7 +72,7 @@ namespace _01___Sistema_de_Lanchonete
         private void IniciarCompras()
         {
             LISTA_COMPRAS_PAGA = new List<produto>();
-            lista_compra_paga.Items.Clear();
+        
             lb_total_paga.Text = "R$ 0.00 ";
         }
 

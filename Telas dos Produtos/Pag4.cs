@@ -31,23 +31,7 @@ namespace _01___Sistema_de_Lanchonete
             }
         }
 
-        private void guna2Button4_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog();
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog();
-        }
-
-        private void guna2Button7_Click(object sender, EventArgs e)
-        {
-            Carrinho a = new Carrinho();
-            a.ShowDialog();
-        }
+   
 
         private void bt_verpreco_Click(object sender, EventArgs e)
         {

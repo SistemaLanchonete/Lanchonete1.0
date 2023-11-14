@@ -51,7 +51,7 @@ namespace _01___Sistema_de_Lanchonete
             };
             foreach (produto p in LISTA_PRODUTOS)
             {
-                lista_produtos.Items.Add(ConstruirLinhaProduto(p)); // Constroi as linhas de produtos
+                lista_produto.Items.Add(ConstruirLinhaProduto(p)); // Constroi as linhas de produtos
             }
             IniciarCompras();
         }
@@ -65,12 +65,6 @@ namespace _01___Sistema_de_Lanchonete
             LISTA_COMPRAS = new List<produto>();
             lista_compra.Items.Clear();
             lb_total.Text = "R$ 0.00 ";
-        }
-        private void lista_produtos_DoubleClick(object sender, EventArgs e)
-        {
-            if (lista_produtos.SelectedIndex == -1) return;
-            produto p = LISTA_PRODUTOS[lista_produtos.SelectedIndex];
-            AdicionarProdutoCompra(p);
         }
 
         private void AdicionarProdutoCompra(produto p) // Add os produto em compras quando clico sobre algum produto em lista produto
@@ -96,13 +90,13 @@ namespace _01___Sistema_de_Lanchonete
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Pagamento relizado com Sucesso! Bom Apetite!");
             if (LISTA_COMPRAS.Count > 0)
             {
                 MessageBox.Show("Compra Finalizada!" + Environment.NewLine + lb_total.Text);
                 IniciarCompras();
                 Tela_Pagamento telapagamento = new Tela_Pagamento();
-                telapagamento.ShowDialog();
+                 telapagamento.ShowDialog();
             
             }
             else
@@ -120,6 +114,18 @@ namespace _01___Sistema_de_Lanchonete
         private void lb_total_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lista_produto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lista_produto_DoubleClick(object sender, EventArgs e)
+        {
+            if (lista_produto.SelectedIndex == -1) return;
+            produto p = LISTA_PRODUTOS[lista_produto.SelectedIndex];
+            AdicionarProdutoCompra(p);
         }
     }
 }

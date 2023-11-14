@@ -72,5 +72,11 @@ namespace _01___Sistema_de_Lanchonete
         {
             this.Close();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Carrinho a = new Carrinho();
+            a.ShowDialog();
+        }
     }
 }
